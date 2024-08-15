@@ -1,0 +1,12 @@
+# BLOG creating steps:
+- `composer create-project laravel/laravel:^10.0 blog`
+- `php artisan make:controller Admin/MainController`
+- #### adminlte3:
+  - [install](https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Installation)
+  - [usage](https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Usage)
+  - [plugins](https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Plugins-Configuration)
+- `php artisan make:model Category -m`
+- `php artisan make:model Tag -m`
+- `php artisan make:model Post -m`
+- `php artisan make:migration create_post_tag_table`
+- `php artisan migrate` 
