@@ -110,7 +110,7 @@ return [
     */
 
     'preloader' => [
-        'enabled' => true,
+        'enabled' => false,
         'mode' => 'fullscreen',
         'img' => [
             'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
@@ -391,21 +391,36 @@ return [
     'menu' => [
             [
                     'text' => 'main',
-                    'url' => 'admin/main',
+                    'route' => 'admin.index',
                     'icon' => 'fas fa-fw fa-home'
             ],
             [
-                    'text' => 'Dashboard',
-                    'icon' => 'fas fa-fw fa-clock',
+                    'text' => 'Categories',
+                    'icon' => 'fas fa-fw fa-archive',
                     'submenu' => [
                             [
-                                    'text' => '1',
-                                    'url' => '#',
+                                    'text' => 'Categories list',
+                                    'route' => 'categories.index',
                             ],
 
                             [
-                                    'text' => '2',
-                                    'url' => '#',
+                                    'text' => 'New category',
+                                    'route' => 'categories.create',
+                            ],
+                    ],
+            ],
+            [
+                    'text' => 'Tags',
+                    'icon' => 'fas fa-fw fa-archive',
+                    'submenu' => [
+                            [
+                                    'text' => 'Tags list',
+                                    'route' => 'tags.index',
+                            ],
+
+                            [
+                                    'text' => 'New tag',
+                                    'route' => 'tags.create',
                             ],
                     ],
             ],

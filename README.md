@@ -10,3 +10,6 @@
 - `php artisan make:model Post -m`
 - `php artisan make:migration create_post_tag_table`
 - `php artisan migrate` 
+- [sluggable](https://github.com/cviebrock/eloquent-sluggable)
+- `php artisan make:controller  Admin/CategoryController -r`
+- `php artisan make:request Category/StoreCategory`
