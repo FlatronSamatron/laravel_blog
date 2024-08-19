@@ -13,3 +13,9 @@
 - [sluggable](https://github.com/cviebrock/eloquent-sluggable)
 - `php artisan make:controller  Admin/CategoryController -r`
 - `php artisan make:request Category/StoreCategory`
+- `php artisan make:controller Admin/TagController -r`
+- `php artisan make:request Tag/StoreRequest`
+- `php artisan make:request Tag/UpdateRequest`
+- `php artisan make:controller Admin/PostController -r`
+- `php artisan make:request Post/UpdatePostRequest`
+- `php artisan make:request Post/StorePostRequest`

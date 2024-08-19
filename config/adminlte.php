@@ -411,7 +411,7 @@ return [
             ],
             [
                     'text' => 'Tags',
-                    'icon' => 'fas fa-fw fa-archive',
+                    'icon' => 'fas fa-fw fa-tags',
                     'submenu' => [
                             [
                                     'text' => 'Tags list',
@@ -421,6 +421,21 @@ return [
                             [
                                     'text' => 'New tag',
                                     'route' => 'tags.create',
+                            ],
+                    ],
+            ],
+            [
+                    'text' => 'Posts',
+                    'icon' => 'fas fa-fw fa-edit',
+                    'submenu' => [
+                            [
+                                    'text' => 'Posts list',
+                                    'route' => 'posts.index',
+                            ],
+
+                            [
+                                    'text' => 'New post',
+                                    'route' => 'posts.create',
                             ],
                     ],
             ],
