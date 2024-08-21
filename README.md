@@ -19,3 +19,20 @@
 - `php artisan make:controller Admin/PostController -r`
 - `php artisan make:request Post/UpdatePostRequest`
 - `php artisan make:request Post/StorePostRequest`
+- [Debugbar for Laravel](https://github.com/barryvdh/laravel-debugbar)
+- `php artisan make:controller UserController`
+- `php artisan make:request User/StoreUserRequest`
+- `php artisan make:migration alter_table_users_add_isadmin --table=users`
+- `php artisan make:request User/LoginUserRequesst`
+- `php artisan make:middleware AdminMiddleware`
+- input: globSync("resources/{css,js,front}/**/*.{css,js,png,ico,jpg}") => helped to add all files from resources to build then use Vite::asset in page, maybe should add 'Vite' => \Illuminate\Support\Facades\Vite::class in config then npm run build and npm run dev
+- `php artisan make:controller CategoryController`
+- "php artisan serve" "npm run dev":
+  - npm install concurrently --save-dev
+  - "scripts": {
+    "serve": "concurrently \"php artisan serve\" \"npm run dev\""
+    }
+  - npm run serve
+- `php artisan make:controller TagController`
+- `php artisan make:migration alter_table_posts_add_title_index --table=posts`
+- `php artisan make:controller SearchController`

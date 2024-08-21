@@ -27,11 +27,13 @@
 
                 <div class="form-group">
                     <label>Description</label>
-                    <textarea name="description" class="form-control @error('description') is-invalid @enderror" rows="3" placeholder="Enter description" spellcheck="false"></textarea>
+{{--                    <textarea name="description" class="form-control @error('description') is-invalid @enderror" rows="3" placeholder="Enter description" spellcheck="false"></textarea>--}}
+                    <x-adminlte-text-editor name="description" igroup-size="sm" placeholder="description..."/>
                 </div>
                 <div class="form-group">
                     <label>Content</label>
-                    <textarea name="content" class="form-control @error('content') is-invalid @enderror" rows="3" placeholder="Enter content" spellcheck="false"></textarea>
+                    <x-adminlte-text-editor name="content" igroup-size="sm" placeholder="Content..."/>
+{{--                    <textarea name="content" class="form-control @error('content') is-invalid @enderror" rows="3" placeholder="Enter content" spellcheck="false"></textarea>--}}
                 </div>
                 <div class="form-group">
                     <label>Category</label>

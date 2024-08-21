@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => 'Blog',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -476,6 +476,7 @@ return [
     */
 
     'plugins' => [
+
         'Datatables' => [
             'active' => false,
             'files' => [
@@ -545,6 +546,21 @@ return [
                     'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
                 ],
             ],
+        ],
+        'Summernote' => [
+                'active' => true,
+                'files' => [
+                        [
+                                'type' => 'css',
+                                'asset' => true,
+                                'location' => 'vendor/summernote/summernote-bs4.min.css',
+                        ],
+                        [
+                                'type' => 'js',
+                                'asset' => true,
+                                'location' => 'vendor/summernote/summernote-bs4.min.js',
+                        ],
+                ],
         ],
     ],
 
